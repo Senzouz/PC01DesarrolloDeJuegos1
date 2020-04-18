@@ -1,0 +1,11 @@
+·¿Cómo se crea un prefab?
+
+-Después de crear un gameObject y ponerle los componentes que se quieran, se arrastra de la jerarquía a la carpeta del proyecto.
+
+·¿Cuál es la diferencia entre un Collider que es Trigger versus uno que no lo es?
+
+-Tener activado el isTrigger, otros objetos que tengan Collider van a atravesarlo y permite el uso de las funciones OnTriggerEnter/OnTriggerEnter2D y OnTriggerExit/OnTriggerExit2D. Si está desactivado, se permite usar las funciones OnCollisionEnter/OnCollisionEnter2D y OnCollisionExit/OnCollisionExit2D.
+
+·Tengo un script agregado a un Game Object en escena pero no reconoce los métodos Update, Start Awake, ¿qué puede estar pasando?
+
+-El gameObject puede no estar activado, puede no estar heredando MonoBehaviour
